@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<VASSAL.build.GameModule ModuleOther1="" ModuleOther2="" VassalVersion="3.6.5" description="" name="Flashpoint South China Sea" nextPieceSlotId="163" version="1.0">
+<VASSAL.build.GameModule ModuleOther1="" ModuleOther2="" VassalVersion="3.6.7-SNAPSHOT-444498a-PolyEditorPlusPlus" description="" name="Flashpoint South China Sea" nextPieceSlotId="164" version="1.0">
     <VASSAL.build.module.BasicCommandEncoder/>
     <VASSAL.build.module.Documentation>
         <VASSAL.build.module.documentation.AboutScreen fileName="boxcover4.png" title="About Module"/>
@@ -25,9 +25,9 @@
     <VASSAL.build.module.properties.GlobalTranslatableMessages/>
     <VASSAL.build.module.PrototypesContainer>
         <VASSAL.build.module.PrototypeDefinition description="" name="Black Cylinder">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;black_cylinder.png;;true;;;;false;;1;1;true;65,130;;;;1.0\	piece;;;;/	1\	null;37;81;;0</VASSAL.build.module.PrototypeDefinition>
-        <VASSAL.build.module.PrototypeDefinition description="" name="Blue Cube">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;BlueCube.png;;true;;;;false;;1;1;true;65,130;;;;1.4\	piece;;;;/	1\	null;42;42;;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition description="" name="Blue Cube">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;BlueCube.png;;true;;;;false;;1;1;true;65,130;;;;0.8\	piece;;;;/	1\	null;59;59;;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition description="" name="Grey Cylinder">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;grey_cylinder.png;;true;;;;false;;1;1;true;65,130;;;;1.0\	piece;;;;/	1\	null;37;81;;0</VASSAL.build.module.PrototypeDefinition>
-        <VASSAL.build.module.PrototypeDefinition description="" name="Red Cube">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;RedCube.png;;true;;;;false;;1;1;true;65,130;;;;1.4\	piece;;;;/	1\	null;42;42;;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition description="" name="Red Cube">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;RedCube.png;;true;;;;false;;1;1;true;65,130;;;;0.8\	piece;;;;/	1\	null;59;59;;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.folder.PrototypeFolder desc="" name="Cards">
             <VASSAL.build.module.folder.PrototypeFolder desc="" name="Event Cards">
                 <VASSAL.build.module.PrototypeDefinition description="" name="Event Card">+/null/obs;70,130;EventBack.png;Flip;2;* Unknown Event Card *;side:;Peek;;true;;	mark;EventCard\	mark;Layer\\	piece;;;;/null;	Y\	Cards\\	null;37;32;;0</VASSAL.build.module.PrototypeDefinition>
@@ -94,7 +94,219 @@
     </VASSAL.build.module.PrototypesContainer>
     <VASSAL.build.module.Map allowMultiple="false" backgroundcolor="255,255,255" buttonName="Map" changeFormat="$message$" color="0,0,0" createFormat="$pieceName$ created in $location$ *" edgeHeight="0" edgeWidth="0" hideKey="" hotkey="" icon="/images/map.gif" launch="false" mapName="Main Map" markMoved="Always" markUnmovedHotkey="" markUnmovedIcon="/images/unmoved.gif" markUnmovedReport="" markUnmovedText="" markUnmovedTooltip="Mark all pieces on this map as not moved" moveKey="" moveToFormat="$pieceName$ moves $previousLocation$ &amp;rarr; $location$ *" moveWithinFormat="$pieceName$ moves $previousLocation$ &amp;rarr; $location$ *" showKey="" thickness="3">
         <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
-            <VASSAL.build.module.map.boardPicker.Board image="FlashPointBoardOnTable.png" name="Map" reversible="false"/>
+            <VASSAL.build.module.map.boardPicker.Board image="FlashPointBoardOnTable.png" name="Map" reversible="false">
+                <VASSAL.build.module.map.boardPicker.board.ZonedGrid>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.ZonedGridHighlighter/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="China Political Warfare" path="930,787;1488,787;1488,911;930,911" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China PW #1" originx="1273" originy="848"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China PW #2" originx="1350" originy="848"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China PW #3" originx="1425" originy="848"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="China Reserve" path="1122,443;1662,443;1662,748;1122,748" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="China Available" path="713,321;1708,321;1708,970;713,970" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="US Political Warfare" path="2497,1451;3057,1451;3057,1579;2497,1579" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US PW #1" originx="2839" originy="1514"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US PW #2" originx="2916" originy="1514"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US PW #3" originx="2992" originy="1514"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="US Reserve" path="2751,797;3053,797;3053,1340;2751,1340" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="US Available" path="2448,645;3099,645;3099,1640;2448,1640" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$gridLocation$" name="Tension Track" path="1740,469;2354,469;2354,661;1740,661" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="LOW" originx="1844" originy="581"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="MEDIUM" originx="1983" originy="581"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="HIGH" originx="2113" originy="581"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="CRITICAL" originx="2249" originy="581"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$gridLocation$" name="Campaign Track" path="805,1029;994,1029;994,1516;805,1516" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="ONE" originx="902" originy="1165"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="TWO" originx="902" originy="1300"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="THREE" originx="902" originy="1429"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$gridLocation$" name="Victory Point Track" path="700,2721;700,3450;3100,3450;3100,2721;2924,2721;2924,3285;867,3285;867,2721" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 15" originx="783" originy="2813"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 14" originx="782" originy="2927"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 13" originx="783" originy="3036"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 12" originx="785" originy="3147"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 11" originx="787" originy="3258"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 10" originx="783" originy="3369"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 9" originx="894" originy="3370"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 8" originx="1008" originy="3366"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 7" originx="1118" originy="3368"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 6" originx="1229" originy="3366"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 5" originx="1340" originy="3366"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 4" originx="1453" originy="3369"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 3" originx="1561" originy="3367"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 2" originx="1674" originy="3369"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="China 1" originx="1787" originy="3366"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="0" originx="1896" originy="3366"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 1" originx="2008" originy="3372"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 2" originx="2116" originy="3369"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 3" originx="2228" originy="3371"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 4" originx="2341" originy="3369"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 5" originx="2452" originy="3366"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 6" originx="2562" originy="3366"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 7" originx="2675" originy="3369"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 8" originx="2783" originy="3365"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 9" originx="2897" originy="3368"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 10" originx="3007" originy="3367"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 11" originx="3010" originy="3260"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 12" originx="3007" originy="3146"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 13" originx="3006" originy="3033"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 14" originx="3006" originy="2926"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="US 15" originx="3007" originy="2814"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Scarborough Shoal" path="1833,1167;2404,1170;2407,1480;1835,1480" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="SS Fonop 1" originx="1962" originy="1354"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="SS Fonop 2" originx="2034" originy="1354"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="SS CR 1" originx="2204" originy="1354"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="SS CR 2" originx="2278" originy="1354"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Paracel Islands" path="1449,1456;2029,1456;2029,1750;1450,1750" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="PI Fonop 1" originx="1582" originy="1625"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="PI Fonop 2" originx="1658" originy="1625"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="PI CR 1" originx="1826" originy="1625"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="PI CR 2" originx="1903" originy="1625"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Spratly Islands" path="1557,2039;2124,2039;2124,2352;1557,2352" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="SI Fonop 1" originx="1681" originy="2225"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="SI Fonop 2" originx="1757" originy="2225"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="SI CR 1" originx="1924" originy="2225"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="SI CR 2" originx="1999" originy="2225"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Vietnam Diplomatic" path="802,2049;1543,2049;1543,2195;802,2195" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V US Diplo 1" originx="885" originy="2103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V US Diplo 2" originx="960" originy="2103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V US Diplo 3" originx="1038" originy="2103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V China Diplo 1" originx="1311" originy="2103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V China Diplo 2" originx="1387" originy="2103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V China Diplo 3" originx="1463" originy="2103"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Vietnam Economic" path="802,1828;1317,1828;1317,1917;1543,1917;1543,2048;802,2048" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V US Eco 1" originx="884" originy="1988"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V US Eco 2" originx="958" originy="1988"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V US Eco 3" originx="1036" originy="1988"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V China Eco 1" originx="1308" originy="1988"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V China Eco 2" originx="1386" originy="1988"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="V China Eco 3" originx="1461" originy="1988"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Vietnam Locked" path="1543,1828;1317,1828;1317,1917;1543,1917" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="Vietnam Locked" originx="1421" originy="1877"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Vietnam" path="802,1828;1543,1828;1543,2195;802,2195" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Malaysia Diplomatic" path="800,2550;1542,2550;1542,2695;800,2695" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="M US Diplo 1" originx="960" originy="2602"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="M US Diplo 2" originx="1036" originy="2602"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="M China Diplo 1" originx="1311" originy="2602"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="M China Diplo 2" originx="1386" originy="2602"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Malaysia Economic" path="800,2330;1300,2331;1300,2417;1541,2417;1542,2549;800,2549" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="M US Eco 1" originx="960" originy="2490"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="M US Eco 2" originx="1036" originy="2490"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="M China Eco 1" originx="1310" originy="2490"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="M China Eco 2" originx="1387" originy="2490"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Malaysia Locked" path="1300,2331;1300,2417;1541,2417;1541,2331" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="Malaysia Locked" originx="1422" originy="2379"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Malaysia" path="800,2330;1542,2330;1542,2695;800,2695" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Philippines Diplomatic" path="2319,2050;3054,2050;3054,2197;2319,2197" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P US Diplo 1" originx="2396" originy="2103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P US Diplo 2" originx="2472" originy="2103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P US Diplo 3" originx="2549" originy="2103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P China Diplo 1" originx="2822" originy="2103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P China Diplo 2" originx="2898" originy="2103"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P China Diplo 3" originx="2975" originy="2103"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Philippines Economic" path="2319,1834;2822,1834;2822,1920;3054,1920;3054,2049;2319,2049" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P US Eco 1" originx="2396" originy="1988"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P US Eco 2" originx="2472" originy="1988"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P US Eco 3" originx="2548" originy="1988"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P China Eco 1" originx="2822" originy="1988"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P China Eco 2" originx="2898" originy="1988"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="P China Eco 3" originx="2976" originy="1988"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Philippines Locked" path="2822,1834;2822,1920;3054,1920;3054,1834" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="Philippines Locked" originx="2934" originy="1877"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Philippines" path="2319,1834;3054,1834;3054,2197;2319,2197" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Brunei Diplomatic" path="2062,2550;2800,2550;2800,2700;2062,2700" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="B US Diplo 1" originx="2295" originy="2602"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="B China Diplo 1" originx="2569" originy="2602"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Brunei Economic" path="2062,2334;2557,2334;2557,2422;2800,2422;2800,2549;2062,2549" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="B US Eco 1" originx="2295" originy="2490"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="B China Eco 1" originx="2570" originy="2490"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Brunei Locked" path="2557,2334;2557,2422;2800,2422;2800,2334" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="Brunei Locked" originx="2679" originy="2379"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Brunei" path="2062,2334;2800,2334;2800,2700;2062,2700" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Indonesia Diplomatic" path="1600,2984;2338,2984;2338,3134;1600,3134" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="I US Diplo 1" originx="1757" originy="3039"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="I China Diplo 1" originx="2107" originy="3039"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="I US Diplo 2" originx="1831" originy="3039"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="I China Diplo 2" originx="2182" originy="3039"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Indonesia Economic" path="1600,2768;2095,2768;2095,2856;2338,2856;2338,2983;1600,2983" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="I US Eco 1" originx="1756" originy="2929"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="I China Eco 1" originx="2106" originy="2929"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="I China Eco 2" originx="2183" originy="2929"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="I US Eco 2" originx="1831" originy="2929"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Indonesia Locked" path="2095,2768;2095,2856;2338,2856;2338,2768" useHighlight="false" useParentGrid="false">
+                        <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="true" visible="false">
+                            <VASSAL.build.module.map.boardPicker.board.Region name="Indonesia Locked" originx="2216" originy="2815"/>
+                        </VASSAL.build.module.map.boardPicker.board.RegionGrid>
+                    </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Indonesia" path="1601,2765;2337,2765;2337,3133;1601,3133" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Flashpoint SCS Map" path="620,257;3169,257;3169,3536;620,3536" useHighlight="false" useParentGrid="false"/>
+                    <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$name$" name="Table (offboard)" path="0,0;3790,1;3790,3790;0,3790" useHighlight="false" useParentGrid="false"/>
+                </VASSAL.build.module.map.boardPicker.board.ZonedGrid>
+            </VASSAL.build.module.map.boardPicker.Board>
         </VASSAL.build.module.map.BoardPicker>
         <VASSAL.build.module.map.StackMetrics bottom="40,0" disabled="false" down="37,0" exSepX="6" exSepY="18" top="38,0" unexSepX="2" unexSepY="4" up="39,0"/>
         <VASSAL.build.module.map.ForwardToKeyBuffer/>
@@ -175,11 +387,11 @@
     <VASSAL.build.module.PieceWindow defaultWidth="0" hidden="false" hotkey="" icon="" scale="1.0" text="Pieces" tooltip="Show/Hide the Pieces window">
         <VASSAL.build.widget.TabWidget entryName="Pieces">
             <VASSAL.build.widget.PanelWidget fixed="false" nColumns="3" scale="0.8" vert="false">
-                <VASSAL.build.widget.PieceSlot entryName="" gpid="0" height="67" width="67">+/null/prototype;Red Cube	piece;;;;/	null;0;0;0;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="" gpid="2" height="67" width="67">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;2;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="0" height="84" width="84">+/null/prototype;Red Cube	piece;;;;/	null;47;74;0;1;ppScale;0.8</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="2" height="84" width="84">+/null/prototype;Blue Cube	piece;;;;/	null;47;74;2;1;ppScale;0.8</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PanelWidget fixed="false" nColumns="3" scale="0.5" vert="false">
-                    <VASSAL.build.widget.PieceSlot entryName="" gpid="160" height="81" width="81">+/null/prototype;Black Cylinder	piece;;;;/	null;0;0;160;0</VASSAL.build.widget.PieceSlot>
-                    <VASSAL.build.widget.PieceSlot entryName="" gpid="162" height="81" width="81">+/null/prototype;Grey Cylinder	piece;;;;/	null;0;0;162;1;ppScale;0.5</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="" gpid="160" height="81" width="81">+/null/prototype;Black Cylinder	piece;;;;/	null;40;74;160;1;ppScale;0.5</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="" gpid="162" height="81" width="81">+/null/prototype;Grey Cylinder	piece;;;;/	null;40;74;162;1;ppScale;0.5</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.widget.PanelWidget>
             </VASSAL.build.widget.PanelWidget>
         </VASSAL.build.widget.TabWidget>
