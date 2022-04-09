@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<VASSAL.build.GameModule ModuleOther1="" ModuleOther2="" VassalVersion="3.6.7-SNAPSHOT-444498a-PolyEditorPlusPlus" description="Harold Buchanan's Game of Economic and Political Rivalry in the South China Sea" name="Flashpoint South China Sea" nextPieceSlotId="1407" version="1.0">
+<VASSAL.build.GameModule ModuleOther1="" ModuleOther2="" VassalVersion="3.6.7-SNAPSHOT-d22ff65-SetupStackAllowGridName" description="Harold Buchanan's Game of Economic and Political Rivalry in the South China Sea" name="Flashpoint South China Sea" nextPieceSlotId="1451" version="1.0">
     <VASSAL.build.module.BasicCommandEncoder/>
     <VASSAL.build.module.Documentation>
         <VASSAL.build.module.documentation.AboutScreen fileName="boxcover4.png" title="About Module"/>
@@ -52,7 +52,7 @@
                 <VASSAL.build.module.PrototypeDefinition description="" name="Plopper">+/null/setprop;PlopMap;false,0,10000,false;:57364\,0\,ReadyPlop:P\,{CurrentMap};PlopMap - on receiving "ReadyPlop", stores this Piece's current map in the global properties, so it can be retrieved by the piece we're placing (to move itself there);Current Zone\/Current Map\/Module;	setprop;PlopY;true,0,10000,false;:57364\,0\,ReadyPlop:P\,{ClickedY},:57361\,0\,ReadyPlop2:P\,{PlopY - 60},:57360\,0\,ReadyPlop2a:P\,{PlopY - 20};PlopY - on receiving "ReadyPlop", stores the exact location player clicked on THIS piece in the global properties, so it can be retrieved by the piece we're placing (to move itself there);Current Zone\/Current Map\/Module;\	setprop;PlopX;true,0,10000,false;:57364\,0\,ReadyPlop:P\,{ClickedX},:57361\,0\,ReadyPlop2:P\,{PlopX + 30},:57360\,0\,ReadyPlop2a:P\,{PlopX - 10};PlopX - on receiving "ReadyPlop", stores the exact location player clicked on THIS piece in the global properties, so it can be retrieved by the piece we're placing (to move itself there);Current Zone\/Current Map\/Module;\\	piece;;;;/	\	\\	null;0;0;;0</VASSAL.build.module.PrototypeDefinition>
             </VASSAL.build.module.folder.PrototypeFolder>
             <VASSAL.build.module.folder.PrototypeFolder desc="(group several common prototype blocks into one)" name="Standard Marker Prototypes">
-                <VASSAL.build.module.PrototypeDefinition description="" name="Simple Marker">+/null/prototype;Move Report	prototype;Deleteable\	prototype;Ploppable\\	prototype;Adjustable\\\	prototype;Marker\\\\	piece;;;;/	\	\\	\\\	\\\\	null;0;0;;0</VASSAL.build.module.PrototypeDefinition>
+                <VASSAL.build.module.PrototypeDefinition description="" name="Simple Marker">+/null/prototype;Move Report	prototype;Ploppable\	prototype;Adjustable\\	prototype;Marker\\\	piece;;;;/	\	\\	\\\	null;37;32;;0</VASSAL.build.module.PrototypeDefinition>
                 <VASSAL.build.module.PrototypeDefinition description="" name="Complex Marker">+/null/prototype;Move Trigger	prototype;Deleteable\	prototype;Ploppable\\	prototype;Adjustable\\\	prototype;Marker\\\\	piece;;;;/	\	\\	\\\	\\\\	null;37;32;;0</VASSAL.build.module.PrototypeDefinition>
             </VASSAL.build.module.folder.PrototypeFolder>
             <VASSAL.build.module.folder.PrototypeFolder desc="Markers that display text strings" name="Text Labels">
@@ -60,9 +60,9 @@
                 <VASSAL.build.module.PrototypeDefinition description="" name="Text Label Large">+/null/label;;;60;;0,0,0;c;0;c;0;b;c;$pieceName$ ($label$);SansSerif;1;0;TextLabel;	immob;cgA;I;R\	piece;;;;/$MyLabelString$	\	null;37;100;;0</VASSAL.build.module.PrototypeDefinition>
             </VASSAL.build.module.folder.PrototypeFolder>
         </VASSAL.build.module.folder.PrototypeFolder>
-        <VASSAL.build.module.PrototypeDefinition description="" name="Black Cylinder">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;black_cylinder.png;;true;;;;false;;1;1;true;65,130;;;;1.0\	piece;;;;/	1\	null;37;81;;0</VASSAL.build.module.PrototypeDefinition>
-        <VASSAL.build.module.PrototypeDefinition description="" name="Blue Cube">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;BlueCube.png;;true;;;;false;;1;1;true;65,130;;;;0.8\	prototype;Simple Marker\\	basicName;Blue Cube\\\	piece;;;;/	1\	\\	\\\	null;53;53;;0</VASSAL.build.module.PrototypeDefinition>
-        <VASSAL.build.module.PrototypeDefinition description="" name="Grey Cylinder">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;grey_cylinder.png;;true;;;;false;;1;1;true;65,130;;;;1.0\	prototype;Simple Marker\\	basicName;Grey Cylinder\\\	piece;;;;/	1\	\\	\\\	null;0;0;;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition description="" name="Black Cylinder">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;black_cylinder.png;;true;;;;false;;1;1;true;65,130;;;;1.0\	piece;;;;/	1\	null;0;0;;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition description="" name="Blue Cube">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;BlueCube.png;;true;;;;false;;1;1;true;65,130;;;;0.8\	prototype;Simple Marker\\	basicName;Blue Cube\\\	piece;;;;/	1\	\\	\\\	null;0;0;;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition description="" name="Grey Cylinder">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;grey_cylinder.png;;true;;;;false;;1;1;true;65,130;;;;1.0\	prototype;Simple Marker\\	piece;;;;/	1\	\\	null;81;81;;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.PrototypeDefinition description="" name="Red Cube">+/null/immob;;N;R;	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;RedCube.png;;true;;;;false;;1;1;true;65,130;;;;0.8\	prototype;Simple Marker\\	basicName;Red Cube\\\	piece;;;;/	1\	\\	\\\	null;53;53;;0</VASSAL.build.module.PrototypeDefinition>
         <VASSAL.build.module.folder.PrototypeFolder desc="" name="Cards">
             <VASSAL.build.module.folder.PrototypeFolder desc="" name="Event Cards">
@@ -422,6 +422,9 @@
                 </VASSAL.build.module.folder.PrototypeFolder>
             </VASSAL.build.module.folder.PrototypeFolder>
         </VASSAL.build.module.folder.PrototypeFolder>
+        <VASSAL.build.module.PrototypeDefinition description="" name="Tension Marker">+/null/prototype;Grey Cylinder	mark;Tension\	basicName;Tension\\	piece;;;;/	Y\	\\	null;0;0;;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition description="" name="Campaign Marker">+/null/prototype;Grey Cylinder	mark;Campaign\	basicName;Campaign\\	piece;;;;/	Y\	\\	null;0;0;;0</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition description="" name="VP Marker">+/null/prototype;Grey Cylinder	mark;VP\	basicName;VP\\	piece;;;;/	Y\	\\	null;81;81;;0</VASSAL.build.module.PrototypeDefinition>
     </VASSAL.build.module.PrototypesContainer>
     <VASSAL.build.module.Map allowMultiple="false" backgroundcolor="255,255,255" buttonName="Map" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hideKey="" hotkey="" icon="/images/map.gif" launch="false" mapName="Main Map" markMoved="Always" markUnmovedHotkey="" markUnmovedIcon="/images/unmoved.gif" markUnmovedReport="" markUnmovedText="" markUnmovedTooltip="Mark all pieces on this map as not moved" moveKey="57348,0,MovedOnMap" moveToFormat="" moveWithinFormat="" showKey="" thickness="3">
         <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
@@ -654,7 +657,7 @@
         <VASSAL.build.module.properties.GlobalProperties/>
         <VASSAL.build.module.map.SelectionHighlighters/>
         <VASSAL.build.module.map.HighlightLastMoved color="255,0,0" enabled="true" thickness="2"/>
-        <VASSAL.build.module.map.Zoomer inButtonText="" inIconName="/images/zoomIn.gif" inTooltip="Zoom in" outButtonText="" outIconName="/images/zoomOut.gif" outTooltip="Zoom out" pickButtonText="" pickIconName="/images/zoom.png" pickTooltip="Select Zoom" zoomInKey="" zoomLevels="0.2,0.25,0.35714285714285715,0.4,0.5,0.5384615384615384,0.625,0.7142857142857143,0.8,0.9,1.0" zoomOutKey="" zoomPickKey="" zoomStart="1"/>
+        <VASSAL.build.module.map.Zoomer inButtonText="" inIconName="/images/zoomIn.gif" inTooltip="Zoom in" outButtonText="" outIconName="/images/zoomOut.gif" outTooltip="Zoom out" pickButtonText="" pickIconName="/images/zoom.png" pickTooltip="Select Zoom" zoomInKey="" zoomLevels="0.2,0.25,0.33333,0.4,0.4221,0.5,0.54,0.666666,0.8,0.9,1.0" zoomOutKey="" zoomPickKey="" zoomStart="4"/>
         <VASSAL.build.module.map.DrawPile allowMultiple="true" allowSelect="true" canSave="false" color="0,0,0" countExpressions="" deckOwners="" deckRestrictAccess="false" draw="true" drawFaceUp="true" drawMultipleMessage="Draw multiple cards" drawSpecificMessage="Draw specific cards" emptyHotkey="" expressionCounting="false" faceDown="Always" faceDownFormat="" faceDownHotkey="" faceDownMessage="Face down" faceFlipHotkey="" faceUpHotkey="" faceUpMessage="Face up" faceUpReportFormat="" height="509" hotkeyOnEmpty="false" loadHotkey="" loadMessage="Load Deck" loadReportFormat="Deck Loaded" maxStack="20" name="Event Draw Deck" reshufflable="false" reshuffleCommand="" reshuffleHotkey="" reshuffleMessage="" reshuffleTarget="" restrictExpression="" restrictOption="false" reverseCommand="Reverse" reverseFormat="" reverseHotkey="" reversible="false" saveHotkey="" saveMessage="Save Deck" saveReportFormat="Deck Saved" selectDisplayProperty="$BasicName$" selectSortProperty="" shuffle="Always" shuffleCommand="Shuffle" shuffleFormat="" shuffleHotkey="" width="364" x="3457" y="2605">
             <VASSAL.build.widget.CardSlot entryName="US Announces Formal Review of Taiwan Relations Act" gpid="3" height="64" width="75">+/null/prototype;US Announces Formal Review of Taiwan Relations Act	piece;;;;/	null;0;0;3;0</VASSAL.build.widget.CardSlot>
             <VASSAL.build.widget.CardSlot entryName="Chinese Declare ADIZ" gpid="5" height="64" width="75">+/null/prototype;Chinese Declare ADIZ	piece;;;;/	null;0;0;5;0</VASSAL.build.widget.CardSlot>
@@ -706,27 +709,152 @@
             <VASSAL.build.widget.CardSlot entryName="General Secretary of the Communist Party of VIETNAM (Nguyễn Phú Trọng)" gpid="97" height="64" width="75">+/null/prototype;General Secretary of the Communist Party of VIETNAM (Nguyễn Phú Trọng)	piece;;;;/	null;0;0;97;0</VASSAL.build.widget.CardSlot>
         </VASSAL.build.module.map.DrawPile>
         <VASSAL.build.module.map.DrawPile allowMultiple="false" allowSelect="true" canSave="false" color="0,0,0" countExpressions="" deckOwners="" deckRestrictAccess="false" draw="true" drawFaceUp="true" drawMultipleMessage="Draw multiple cards" drawSpecificMessage="Draw specific cards" emptyHotkey="" expressionCounting="false" faceDown="Never" faceDownFormat="" faceDownHotkey="" faceDownMessage="Face down" faceFlipHotkey="" faceUpHotkey="" faceUpMessage="Face up" faceUpReportFormat="" height="509" hotkeyOnEmpty="false" loadHotkey="" loadMessage="Load Deck" loadReportFormat="Deck Loaded" maxStack="20" name="Event Discard Pile" reshufflable="true" reshuffleCommand="Reshuffle" reshuffleHotkey="" reshuffleMessage="" reshuffleTarget="Event Draw Deck" restrictExpression="" restrictOption="false" reverseCommand="Reverse" reverseFormat="" reverseHotkey="" reversible="false" saveHotkey="" saveMessage="Save Deck" saveReportFormat="Deck Saved" selectDisplayProperty="$BasicName$" selectSortProperty="" shuffle="Never" shuffleCommand="Shuffle" shuffleFormat="" shuffleHotkey="" width="364" x="3457" y="3210"/>
-        <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Brunei" useGridLocation="false" x="305" y="500">
-            <VASSAL.build.widget.PieceSlot entryName="Score Brunei" gpid="146" height="64" width="75">+/null/prototype;Score Brunei	piece;;;;/	null;0;0;146;0</VASSAL.build.widget.PieceSlot>
-        </VASSAL.build.module.map.SetupStack>
-        <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Indonesia" useGridLocation="false" x="305" y="965">
-            <VASSAL.build.widget.PieceSlot entryName="Score Indonesia" gpid="148" height="64" width="75">+/null/prototype;Score Indonesia	piece;;;;/	null;0;0;148;0</VASSAL.build.widget.PieceSlot>
-        </VASSAL.build.module.map.SetupStack>
-        <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Malaysia" useGridLocation="false" x="305" y="1430">
-            <VASSAL.build.widget.PieceSlot entryName="Score Malaysia" gpid="150" height="64" width="75">+/null/prototype;Score Malaysia	piece;;;;/	null;0;0;150;0</VASSAL.build.widget.PieceSlot>
-        </VASSAL.build.module.map.SetupStack>
-        <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Vietnam" useGridLocation="false" x="305" y="1895">
-            <VASSAL.build.widget.PieceSlot entryName="Score Vietnam" gpid="152" height="64" width="75">+/null/prototype;Score Vietnam	piece;;;;/	null;0;0;152;0</VASSAL.build.widget.PieceSlot>
-        </VASSAL.build.module.map.SetupStack>
-        <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Philippines" useGridLocation="false" x="305" y="2360">
-            <VASSAL.build.widget.PieceSlot entryName="Score Philippines" gpid="154" height="64" width="75">+/null/prototype;Score Philippines	piece;;;;/	null;0;0;154;0</VASSAL.build.widget.PieceSlot>
-        </VASSAL.build.module.map.SetupStack>
-        <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Economics" useGridLocation="false" x="305" y="2825">
-            <VASSAL.build.widget.PieceSlot entryName="Score Economics" gpid="156" height="64" width="75">+/null/prototype;Score Economics	piece;;;;/	null;0;0;156;0</VASSAL.build.widget.PieceSlot>
-        </VASSAL.build.module.map.SetupStack>
-        <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score CR-FONOP" useGridLocation="false" x="305" y="3290">
-            <VASSAL.build.widget.PieceSlot entryName="Score CR-FONOP" gpid="158" height="64" width="75">+/null/prototype;Score CR-FONOP	piece;;;;/	null;0;0;158;0</VASSAL.build.widget.PieceSlot>
-        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.folder.MapSubFolder desc="" name="Setup Stacks">
+            <VASSAL.build.module.folder.MapSubFolder desc="" name="Score Cards">
+                <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Brunei" useGridLocation="false" x="305" y="500">
+                    <VASSAL.build.widget.PieceSlot entryName="Score Brunei" gpid="146" height="64" width="75">+/null/prototype;Score Brunei	piece;;;;/	null;0;0;146;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Indonesia" useGridLocation="false" x="305" y="965">
+                    <VASSAL.build.widget.PieceSlot entryName="Score Indonesia" gpid="148" height="64" width="75">+/null/prototype;Score Indonesia	piece;;;;/	null;0;0;148;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Malaysia" useGridLocation="false" x="305" y="1430">
+                    <VASSAL.build.widget.PieceSlot entryName="Score Malaysia" gpid="150" height="64" width="75">+/null/prototype;Score Malaysia	piece;;;;/	null;0;0;150;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Vietnam" useGridLocation="false" x="305" y="1895">
+                    <VASSAL.build.widget.PieceSlot entryName="Score Vietnam" gpid="152" height="64" width="75">+/null/prototype;Score Vietnam	piece;;;;/	null;0;0;152;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Philippines" useGridLocation="false" x="305" y="2360">
+                    <VASSAL.build.widget.PieceSlot entryName="Score Philippines" gpid="154" height="64" width="75">+/null/prototype;Score Philippines	piece;;;;/	null;0;0;154;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score Economics" useGridLocation="false" x="305" y="2825">
+                    <VASSAL.build.widget.PieceSlot entryName="Score Economics" gpid="156" height="64" width="75">+/null/prototype;Score Economics	piece;;;;/	null;0;0;156;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="Table (offboard)" name="Score CR-FONOP" useGridLocation="false" x="305" y="3290">
+                    <VASSAL.build.widget.PieceSlot entryName="Score CR-FONOP" gpid="158" height="64" width="75">+/null/prototype;Score CR-FONOP	piece;;;;/	null;0;0;158;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+            </VASSAL.build.module.folder.MapSubFolder>
+            <VASSAL.build.module.folder.MapSubFolder desc="" name="Discs">
+                <VASSAL.build.module.map.SetupStack location="LOW" name="Tension" useGridLocation="true" x="1844" y="581">
+                    <VASSAL.build.widget.PieceSlot entryName="Tension" gpid="1407" height="64" width="75">+/null/prototype;Tension Marker	piece;;;;/	null;0;0;1407;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="ONE" name="Campaign" useGridLocation="true" x="902" y="1165">
+                    <VASSAL.build.widget.PieceSlot entryName="Campaign" gpid="1408" height="64" width="75">+/null/prototype;Campaign Marker	piece;;;;/	null;0;0;1408;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="0" name="VP" useGridLocation="true" x="1896" y="3366">
+                    <VASSAL.build.widget.PieceSlot entryName="VP" gpid="1409" height="64" width="75">+/null/prototype;VP Marker	piece;;;;/	null;0;0;1409;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+            </VASSAL.build.module.folder.MapSubFolder>
+            <VASSAL.build.module.folder.MapSubFolder desc="" name="Starting Influence Cubes">
+                <VASSAL.build.module.map.SetupStack location="V US Eco 2" useGridLocation="true" x="958" y="1988">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1410" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1410;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="V US Eco 3" useGridLocation="true" x="1036" y="1988">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1411" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1411;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="V China Eco 1" useGridLocation="true" x="1308" y="1988">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1412" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1412;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="V China Eco 2" useGridLocation="true" x="1386" y="1988">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1413" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1413;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="P US Eco 2" useGridLocation="true" x="2472" y="1988">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1414" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1414;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="P US Eco 3" useGridLocation="true" x="2548" y="1988">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1415" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1415;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="P China Eco 1" useGridLocation="true" x="2822" y="1988">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1416" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1416;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="P China Eco 2" useGridLocation="true" x="2898" y="1988">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1417" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1417;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="M US Eco 2" useGridLocation="true" x="1036" y="2490">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1418" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1418;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="M China Eco 1" useGridLocation="true" x="1310" y="2490">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1419" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1419;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="I US Eco 2" useGridLocation="true" x="1831" y="2929">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1420" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1420;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="I China Eco 1" useGridLocation="true" x="2106" y="2929">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1421" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1421;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+            </VASSAL.build.module.folder.MapSubFolder>
+            <VASSAL.build.module.folder.MapSubFolder desc="" name="Chinese Available">
+                <VASSAL.build.module.map.SetupStack location="China Available" useGridLocation="false" x="915" y="555">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1425" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1425;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="China Available" useGridLocation="false" x="1001" y="555">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1426" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1426;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="China Available" useGridLocation="false" x="915" y="641">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1427" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1427;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="China Available" useGridLocation="false" x="1001" y="641">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1428" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1428;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+            </VASSAL.build.module.folder.MapSubFolder>
+            <VASSAL.build.module.folder.MapSubFolder desc="" name="Chinese Reserve">
+                <VASSAL.build.module.map.SetupStack location="China Reserve" useGridLocation="false" x="1342" y="596">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1429" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1429;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="China Reserve" useGridLocation="false" x="1430" y="596">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1430" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1430;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+            </VASSAL.build.module.folder.MapSubFolder>
+            <VASSAL.build.module.folder.MapSubFolder desc="" name="Chinese Start">
+                <VASSAL.build.module.map.SetupStack location="China Available" useGridLocation="false" x="1064" y="960">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1441" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1441;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="China Available" useGridLocation="false" x="1144" y="960">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1443" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1443;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="China Available" useGridLocation="false" x="1224" y="960">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1444" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1444;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="China Available" useGridLocation="false" x="1304" y="960">
+                    <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="1445" height="64" width="75">+/null/prototype;Red Cube	piece;;;;/	null;0;0;1445;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+            </VASSAL.build.module.folder.MapSubFolder>
+            <VASSAL.build.module.folder.MapSubFolder desc="" name="US Available">
+                <VASSAL.build.module.map.SetupStack location="US Available" useGridLocation="false" x="2564" y="1000">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1433" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1433;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="US Available" useGridLocation="false" x="2657" y="1000">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1435" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1435;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="US Available" useGridLocation="false" x="2657" y="1105">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1434" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1434;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="US Available" useGridLocation="false" x="2564" y="1105">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1436" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1436;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+            </VASSAL.build.module.folder.MapSubFolder>
+            <VASSAL.build.module.folder.MapSubFolder desc="" name="US Reserve">
+                <VASSAL.build.module.map.SetupStack location="US Reserve" useGridLocation="false" x="2855" y="1055">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1437" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1437;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="US Reserve" useGridLocation="false" x="2953" y="1055">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1438" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1438;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+            </VASSAL.build.module.folder.MapSubFolder>
+            <VASSAL.build.module.folder.MapSubFolder desc="" name="US Start">
+                <VASSAL.build.module.map.SetupStack location="US Available" useGridLocation="false" x="2625" y="1625">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1446" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1446;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="US Available" useGridLocation="false" x="2705" y="1625">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1448" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1448;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="US Available" useGridLocation="false" x="2785" y="1625">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1449" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1449;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="US Available" useGridLocation="false" x="2865" y="1625">
+                    <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="1450" height="64" width="75">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;1450;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+            </VASSAL.build.module.folder.MapSubFolder>
+        </VASSAL.build.module.folder.MapSubFolder>
     </VASSAL.build.module.Map>
     <VASSAL.build.module.PlayerHand allowMultiple="false" backgroundcolor="255,255,255" buttonName="China" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hideKey="" hotkey="" icon="" launch="true" mapName="China Hand" markMoved="Never" markUnmovedHotkey="" markUnmovedIcon="/images/unmoved.gif" markUnmovedReport="" markUnmovedText="" markUnmovedTooltip="Mark all pieces on this map as not moved" moveKey="" moveToFormat="" moveWithinFormat="" showKey="" side="China" thickness="3" tooltip="China Hand" visible="false">
         <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
@@ -777,6 +905,7 @@
         <VASSAL.build.module.map.HighlightLastMoved color="255,0,0" enabled="true" thickness="2"/>
         <VASSAL.build.module.map.Zoomer inButtonText="" inIconName="/images/zoomIn.gif" inTooltip="Zoom in" outButtonText="" outIconName="/images/zoomOut.gif" outTooltip="Zoom out" pickButtonText="" pickIconName="/images/zoom.png" pickTooltip="Select Zoom" zoomInKey="" zoomLevels="0.125,0.25,0.333,0.444,0.555,0.666,1.0" zoomOutKey="" zoomPickKey="" zoomStart="4"/>
         <VASSAL.build.module.map.MassKeyCommand buttonHotkey="57475,0,draw" buttonText="Draw" canDisable="false" deckCount="1" disabledIcon="" filter="" hotkey="57359,0,DrawChina" icon="" name="" propertyGate="" reportFormat="" reportSingle="false" singleMap="false" target="MAP|true|DECK|||||0|0|Event Draw Deck|false|||EQUALS" tooltip=""/>
+        <VASSAL.build.module.map.MassKeyCommand buttonHotkey="57476,0,Rearrange" buttonText="Arrange" canDisable="false" deckCount="-1" disabledIcon="" filter="" hotkey="57359,0,DrawChina" icon="" name="" propertyGate="" reportFormat="" reportSingle="false" singleMap="true" target="MAP|false|MAP|||||0|0||false|||EQUALS" tooltip="Rearrange cards neatly"/>
     </VASSAL.build.module.PlayerHand>
     <VASSAL.build.module.PlayerHand allowMultiple="false" backgroundcolor="255,255,255" buttonName="US" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hideKey="" hotkey="" icon="" launch="true" mapName="US Hand" markMoved="Never" markUnmovedHotkey="" markUnmovedIcon="/images/unmoved.gif" markUnmovedReport="" markUnmovedText="" markUnmovedTooltip="Mark all pieces on this map as not moved" moveKey="" moveToFormat="" moveWithinFormat="" showKey="" side="US" thickness="3" tooltip="US Hand" visible="false">
         <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
@@ -827,18 +956,7 @@
         <VASSAL.build.module.map.HighlightLastMoved color="255,0,0" enabled="true" thickness="2"/>
         <VASSAL.build.module.map.Zoomer inButtonText="" inIconName="/images/zoomIn.gif" inTooltip="Zoom in" outButtonText="" outIconName="/images/zoomOut.gif" outTooltip="Zoom out" pickButtonText="" pickIconName="/images/zoom.png" pickTooltip="Select Zoom" zoomInKey="" zoomLevels="0.125,0.25,0.333,0.444,0.555,0.666,1.0" zoomOutKey="" zoomPickKey="" zoomStart="4"/>
         <VASSAL.build.module.map.MassKeyCommand buttonHotkey="57475,0,draw" buttonText="Draw" canDisable="false" deckCount="1" disabledIcon="" filter="" hotkey="57360,0,DrawUS" icon="" name="" propertyGate="" reportFormat="" reportSingle="false" singleMap="false" target="MAP|true|DECK|||||0|0|Event Draw Deck|false|||EQUALS" tooltip=""/>
+        <VASSAL.build.module.map.MassKeyCommand buttonHotkey="57476,0,Rearrange" buttonText="Arrange" canDisable="false" deckCount="-1" disabledIcon="" filter="" hotkey="57360,0,DrawUS" icon="" name="" propertyGate="" reportFormat="" reportSingle="false" singleMap="true" target="MAP|false|MAP|||||0|0||false|||EQUALS" tooltip="Rearrange cards neatly"/>
     </VASSAL.build.module.PlayerHand>
-    <VASSAL.build.module.PieceWindow defaultWidth="0" hidden="false" hotkey="" icon="" scale="1.0" text="Pieces" tooltip="Show/Hide the Pieces window">
-        <VASSAL.build.widget.TabWidget entryName="Pieces">
-            <VASSAL.build.widget.PanelWidget fixed="false" nColumns="3" scale="0.8" vert="false">
-                <VASSAL.build.widget.PieceSlot entryName="Red Cube" gpid="0" height="84" width="84">+/null/prototype;Red Cube	piece;;;;/	null;0;0;0;1;ppScale;0.8</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="Blue Cube" gpid="2" height="84" width="84">+/null/prototype;Blue Cube	piece;;;;/	null;0;0;2;1;ppScale;0.8</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PanelWidget fixed="false" nColumns="3" scale="0.5" vert="false">
-                    <VASSAL.build.widget.PieceSlot entryName="" gpid="160" height="81" width="81">+/null/prototype;Black Cylinder	piece;;;;/	null;0;0;160;1;ppScale;0.5</VASSAL.build.widget.PieceSlot>
-                    <VASSAL.build.widget.PieceSlot entryName="Grey Cylinder" gpid="162" height="81" width="81">+/null/prototype;Grey Cylinder	piece;;;;/	null;0;0;162;1;ppScale;0.5</VASSAL.build.widget.PieceSlot>
-                </VASSAL.build.widget.PanelWidget>
-            </VASSAL.build.widget.PanelWidget>
-        </VASSAL.build.widget.TabWidget>
-    </VASSAL.build.module.PieceWindow>
     <VASSAL.i18n.Language/>
 </VASSAL.build.GameModule>
