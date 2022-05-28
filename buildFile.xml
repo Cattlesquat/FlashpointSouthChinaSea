@@ -5,7 +5,7 @@
         <VASSAL.build.module.documentation.AboutScreen fileName="boxcover4.png" title="About Module"/>
         <VASSAL.build.module.documentation.BrowserPDFFile pdfFile="FPSCS_Rule Booklet_1I_Web_Final.pdf" title="Rulebook"/>
     </VASSAL.build.module.Documentation>
-    <VASSAL.build.module.PlayerRoster buttonIcon="FlashpointLogo32.png" buttonKeyStroke="83,520" buttonText="" buttonToolTip="Switch sides, become an observer, or allow another player to take your side in this game">
+    <VASSAL.build.module.PlayerRoster buttonIcon="Flags.png" buttonKeyStroke="83,520" buttonText="" buttonToolTip="Switch sides, become an observer, or allow another player to take your side in this game">
         <entry>China</entry>
         <entry>US</entry>
         <entry>Solitaire</entry>
